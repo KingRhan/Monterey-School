@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    padding: 5px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header img{
+    padding-right: 10px;
+    width: 6%;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 34%;
+}
+
+.header nav a{
+    padding: 20px 10px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+
+.heroimage{
+    user-select: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+
+.home-button{
+    border: 1px solid;
+    border-color: red;
+    border-radius: 10px;
+    margin-right: 30%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 45%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+.home-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+
+
+.home-button:hover{
+    background-color: red;
+}
+
+.text p{
+    margin-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    left: 5%;
+    bottom: 600px;
+    font-size: 50px;
+    font-weight: 1000;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+}
+
+
+.aboutpage{
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    position: relative;
+}
+
+.About-title{
+    color: rgb(223, 0, 0);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.actual-about{
+    font-size: 25px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.about-map{
+    width: 100%;
+    box-shadow: 6px 6px 6px 6px inset;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 10px 580px;
+}
+
+.misandvis{
+    margin: 0px 280px;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16rem;
+    width: 1500px;
+
+}
+
+.mission h3, .vision h3{
+    color: rgb(223, 0, 0);
+    margin: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.mission, .vision{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.programs{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+}
+
+.program-title{
+    color: rgb(223, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+.program-images{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "pic1 pic1 pic1 pic2 pic2"
+      "pic1 pic1 pic1 pic2 pic2"
+      "pic3 pic3 pic3 pic3 pic3"
+      "pic3 pic3 pic3 pic3 pic3"
+      "pic4 pic4 pic4 pic4 pic4"
+      "pic4 pic4 pic4 pic4 pic4"; 
+    align-items: stretch; 
+    margin-left: 25%;
+    padding: 20px;
+    width: 1000px; 
+    height: 1000px; 
+}
+.pic1 { 
+    -webkit-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    grid-area: pic1; 
+    background-image: url(images/grid-photo1.png);
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.pic2 { 
+    -webkit-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    grid-area: pic2; 
+    background-image: url(images/grid-photo4.png);
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.pic3 { 
+    -webkit-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    grid-area: pic3; 
+    background-image: url(images/grid-photo3.png);
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.pic4 { 
+    -webkit-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 115px -29px rgba(0,0,0,0.71);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 0px solid #000000;
+    grid-area: pic4; 
+    background-image: url(images/grid-photo2.png);
+    background-size: cover;
+    background-position: 0px;
+    transition: 0.6s;
+}
+
+.program-text1, .program-text2{
+    opacity: 0;
+    padding: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 0;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.6s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.program-text3, .program-text4{
+    position: relative;
+    opacity: 0;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    z-index: 11;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.6s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover{
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;  
+}
+
+.program-text1:hover, .program-text2:hover, .program-text3:hover, .program-text4:hover{
+    opacity: 1;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+footer{
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 4, 4, 0.609);
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+.contacts{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 1366px), (max-height: 720px)  {
+     .text{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        left: 330px;
+        top: 300px;
+     }
+
+     .heroimage{
+        user-select: none;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+     .header nav a{
+        padding: 20px 10px;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+    }
+
+     .header nav {
+        display: flex;
+        justify-content: center;
+        margin-left: 32%;
+    }
+
+     .header nav a{
+        padding: 20px 10px;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        font-size: 17px;
+    }
+
+    .misandvis{
+        margin: 70px 170px;
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16rem;
+        width: 1000px;
+    
+    }
+
+    .mission h3, .vision h3{
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .mission, .vision{
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
